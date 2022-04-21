@@ -28,8 +28,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/card-component-built-using-html-css-custom-props-flexbox-and-grid-SJkrhE0V9)
+- Live Site URL: [Live Site](https://mateusabelli.github.io/profile-card-component/)
 
 ## My process
 
