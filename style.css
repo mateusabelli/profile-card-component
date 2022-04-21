@@ -1,0 +1,115 @@
+:root {
+  --clr-primary-300: hsl(227, 10%, 46%);
+  --clr-primary-400: hsl(185, 75%, 39%);
+  --clr-primary-700: hsl(229, 23%, 23%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 89%);
+
+  --ff-sans: "Kumbh Sans", sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--clr-primary-400);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 52vw bottom 35vh, 48vw 52vh;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  font-family: var(--ff-sans);
+  color: var(--clr-primary-700);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--clr-neutral-200);
+}
+
+.card-container {
+  background-color: var(--clr-neutral-100);
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 22rem;
+  box-shadow: 0 2rem 4em hsla(230, 40%, 23%, 0.3);
+  overflow: hidden;
+}
+
+.card-header-background > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-header-profile-picture {
+  transform: translateY(-50%);
+}
+
+.card-header-profile-picture > img {
+  margin: 0 auto;
+  border-radius: 50%;
+  outline: 0.35rem solid var(--clr-neutral-100);
+}
+
+.card-content {
+  transform: translateY(-50%);
+}
+
+.card-content-title {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+:where(.card-content-title, .card-footer-number):hover {
+  cursor: pointer;
+  color: var(--clr-primary-400);
+}
+
+.card-content-title > span {
+  padding-left: 0.25rem;
+  font-weight: var(--fw-400);
+  color: var(--clr-primary-300);
+}
+
+.card-content-location {
+  font-size: 0.875rem;
+  color: var(--clr-primary-300);
+}
+
+.card-footer {
+  margin: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-footer-item {
+  padding: 1.5rem;
+}
+
+.card-footer-number {
+  margin-bottom: 0.25em;
+  font-weight: var(--fw-700);
+  font-size: 1.125rem;
+}
+
+.card-footer-title {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  color: var(--clr-primary-300);
+}
+
